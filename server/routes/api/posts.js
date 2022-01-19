@@ -16,7 +16,7 @@ router.get('/', async (req, res) => {
 
 
 async function loadPostsCollection(){
-    const client = mongodb.MongoClient.connect('mongodb+srv://trains:ParolHeroes86@cluster0.upnsj.mongodb.net/posts', {
+    const client = mongodb.MongoClient.connect('mongodb+srv://train:ParolHeroes@cluster0.bu2wa.mongodb.net/poezda?retryWrites=true&w=majority', {
         useNewUrlParser: true
     });
     return client.db('trains').collection('posts')
