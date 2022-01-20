@@ -13,7 +13,7 @@ const posts = require('./routes/api/posts.js');
 
 app.use('/api/posts', posts);
 
-const PORT = process.env.PORT || 5000;
+const PORT = 5000;
 
 app.listen(PORT, () => {
     console.log(`server starts at port http://localhost/${PORT}`)
