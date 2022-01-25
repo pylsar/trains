@@ -4,7 +4,7 @@
       <div class="homePage__head-img">
         <img src="../assets/images/train_head.png" alt="" />
       </div>
-      <button @click="scrollDown">вниз</button>
+      <button class="homePage__down" @click="scrollDown">вниз</button>
 
       <div class="homePage__ellipse-container">
         <div class="homePage__ellipse thin"></div>
@@ -18,9 +18,11 @@
 // import { TimelineMax } from "gsap/all";
 export default {
   name: "Homepage",
-  created() {
+  nounted() {
     // let tl = new TimelineMax();
     // tl.fromTo(".homePage__bg", 3, { opacity: 0 }, { opacity: 1 });
+    // tl
+      // .fromTo(".homePage", 3 , { y: -1000}, {y: 0})
   },
 };
 </script>
